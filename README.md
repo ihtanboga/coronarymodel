@@ -29,8 +29,8 @@ The goal is risk stratification under usual care, not a treatment effect. That
 single decision dictates the whole structure, and in particular it dictates
 that the three-month treatment variable does **not** go into the main vessel
 model as a confounder. Treatment is downstream of the anatomy. Putting it in
-answers a different question (the conditioned residual one) and pulls in the
-collider problem from Part II.3.
+answers a different question (the conditioned residual one) and pulls in a
+collider problem: treatment sits on the path between anatomy and outcome.
 
 The protocol:
 
