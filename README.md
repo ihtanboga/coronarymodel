@@ -18,9 +18,9 @@ separately), and non-SCD death is a competing event, not a censoring event.
 
 ---
 
-## Part III: What a Correct Re-Analysis Would Look Like
+## How I Would Do It
 
-### 3.1 The prognostic design (Question A), done properly
+### 1.1 The prognostic design (Question A), done properly
 
 This is the section the original draft treated too thinly, so here it is in
 full.
@@ -72,7 +72,7 @@ coefficient is close to uninterpretable.
 
 ---
 
-### 3.2 The dynamic prognostic design
+### 1.2 The dynamic prognostic design
 
 The user specifically asked for this, and it is worth separating from both the
 static prognostic model and the causal model, because it answers yet another
@@ -104,7 +104,7 @@ model, which reintroduces exactly the conditioning we are trying to avoid.
 
 ---
 
-### 3.3 The causal design (Question B): target-trial emulation
+### 1.3 The causal design (Question B): target-trial emulation
 
 If you want to claim that treatment strategy modifies vessel-specific risk,
 this is the bar you have to clear. Not a stratified Cox. A target trial.
@@ -168,7 +168,7 @@ constructed at the end of the same landmark script.
 
 ---
 
-### 3.4 The short version of the design argument
+### 1.4 The short version of the design argument
 
 The "should revascularization be in the model" question has no single answer.
 It depends entirely on the estimand:
@@ -193,11 +193,11 @@ one estimand with the interpretation of another.
 
 | File | Estimand |
 | --- | --- |
-| [`R/01_prognostic_usual_care.R`](R/01_prognostic_usual_care.R) | Baseline usual-care prognosis (3.1) |
-| [`R/02_dynamic_prediction.R`](R/02_dynamic_prediction.R) | Dynamic / residual risk, time-varying treatment (3.2) |
-| [`R/03_causal_iptw_itt.R`](R/03_causal_iptw_itt.R) | Causal ITT with baseline strategy, IPTW (3.3) |
-| [`R/04_causal_clone_censor_weight.R`](R/04_causal_clone_censor_weight.R) | Causal with grace period, clone-censor-weight (3.3) |
-| [`R/05_landmark_and_completeness.R`](R/05_landmark_and_completeness.R) | 90-day landmark sensitivity + completeness of revascularization (3.3) |
+| [`R/01_prognostic_usual_care.R`](R/01_prognostic_usual_care.R) | Baseline usual-care prognosis (1.1) |
+| [`R/02_dynamic_prediction.R`](R/02_dynamic_prediction.R) | Dynamic / residual risk, time-varying treatment (1.2) |
+| [`R/03_causal_iptw_itt.R`](R/03_causal_iptw_itt.R) | Causal ITT with baseline strategy, IPTW (1.3) |
+| [`R/04_causal_clone_censor_weight.R`](R/04_causal_clone_censor_weight.R) | Causal with grace period, clone-censor-weight (1.3) |
+| [`R/05_landmark_and_completeness.R`](R/05_landmark_and_completeness.R) | 90-day landmark sensitivity + completeness of revascularization (1.3) |
 
 All variable names are placeholders. Swap in the real column names from your
 data before running.

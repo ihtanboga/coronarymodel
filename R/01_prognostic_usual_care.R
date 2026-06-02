@@ -1,4 +1,4 @@
-# coronarymodel - 3.1 Baseline usual-care prognostic design
+# coronarymodel - 1.1 Baseline usual-care prognostic design
 #
 # Estimand: risk stratification under usual care (NOT a treatment effect).
 # Time zero = angiogram. Outcome = SCD composite. Non-SCD death is a

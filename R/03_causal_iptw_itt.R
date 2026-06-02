@@ -1,4 +1,4 @@
-# coronarymodel - 3.3 Causal design (Question B): IPTW ITT
+# coronarymodel - 1.3 Causal design (Question B): IPTW ITT
 #
 # Use ONLY when a genuine baseline intended strategy (tx0) exists in the data,
 # decided at angiography - NOT reconstructed from the three-month window.

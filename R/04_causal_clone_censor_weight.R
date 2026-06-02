@@ -1,4 +1,4 @@
-# coronarymodel - 3.3 Causal design (Question B): clone-censor-weight
+# coronarymodel - 1.3 Causal design (Question B): clone-censor-weight
 #
 # The realistic case: no clean baseline decision, only resolved-by-90-days
 # status. Clone each patient into all 3 strategies, censor a clone when it

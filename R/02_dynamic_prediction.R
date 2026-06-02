@@ -1,4 +1,4 @@
-# coronarymodel - 3.2 Dynamic prognostic design
+# coronarymodel - 1.2 Dynamic prognostic design
 #
 # Estimand: residual risk RIGHT NOW given the patient's current treatment
 # status. Revascularization enters as a time-varying covariate via a

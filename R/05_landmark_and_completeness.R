@@ -1,4 +1,4 @@
-# coronarymodel - 3.3 Landmark sensitivity + completeness of revascularization
+# coronarymodel - 1.3 Landmark sensitivity + completeness of revascularization
 #
 # A 90-day landmark is a fair SENSITIVITY check only: it classifies treatment
 # among those alive and event-free at day 90, so it deletes the early deaths
